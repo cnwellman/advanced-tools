@@ -20,8 +20,14 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
-  margin-top: 20px;
+  font-size: 38px;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    text-align: left;
+  }
 }
 
 h3 {
@@ -32,8 +38,19 @@ h3 {
 p {
   padding: 20px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .navigation-links {
@@ -68,6 +85,8 @@ p {
 }
 
 .primary-link {
+  display: block;
+  text-align: center;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -90,7 +109,7 @@ p {
 }
 
 .weather-img {
-  padding: 50px 20px 50px 20px;
+  padding: 60px 20px 60px 20px;
   background: #f5f2fe;
   border-radius: 4px;
 }
