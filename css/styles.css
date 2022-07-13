@@ -25,7 +25,7 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  h2 {
+  homepage-heading {
     text-align: left;
   }
 }
